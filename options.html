@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="options.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+  <body class="options-body">
+    <div class="options-main">
+      <div class="options-header">
+        <div class="options-image"></div>
+      </div>
+      <p class="intro">
+        Customize content you would like to block by selecting/deselecting the
+        categories below, or make your own custom category, press enter to submit.
+      </p>
+
+      <h2>Content to Block:</h2>
+
+      <div id="options-content">
+        <div class="content-category collapsed">
+          <label class="outer-label" id="sexual-assault">
+            <input class="category sexual-assault" type="checkbox" value="sexual assault">
+            <div class="delete-category"></div>
+            <div class="label-text">Sexual Assault</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="Sexual Assault">Sexual assault
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="rape">Rape
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="sexual harassment">Sexual harassment
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='sexual-assault-form' class='sexual-assault item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='sexual-assault-input'
+              placeholder="Enter text"
+              class="custom-content sexual-assault"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='gun-violence'><input class="category" type="checkbox" value="Gun Violence">
+            <div class="delete-category"></div>
+            <div class="label-text">Gun Violence</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="gun violence">Gun violence
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="shooting">Shooting
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="NRA">NRA
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="shooter">Shooter
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='gun-violence-form' class='gun-violence item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='gun-violence-input'
+              placeholder="Enter text"
+              class="custom-content gun-violence"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='trump'><input class="category trump" type="checkbox" value="Trump">
+            <div class="delete-category"></div>
+            <div class="label-text">Donald Trump</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="Trump">Donald Trump
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="The Donald">The Donald
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="Melania">Melania
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='trump-form' class='trump item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='trump-input'
+              placeholder="Enter text"
+              class="custom-content trump"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='racism'><input class="category" type="checkbox" value="racism">
+            <div class="delete-category"></div>
+            <div class="label-text">Racism</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="nigger">N****r
+              <div class="delete-content-item"></div>
+          </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="chink">Ch**k
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="nigga">N***a
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="raghead">Rag***d
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='racism-form' class='racism item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='racism-input'
+              placeholder="Enter text"
+              class="custom-content racism"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='sexism'><input class="category" type="checkbox" value="sexism">
+            <div class="delete-category"></div>
+            <div class="label-text">Sexism</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="slut">Sl*t
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="bitch">B***h
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="cunt">C**t
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='sexism-form' class='sexism item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='sexism-input'
+              placeholder="Enter text"
+              class="custom-content sexism"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='homophobia'><input class="category" type="checkbox" value="Homophobia">
+            <div class="delete-category"></div>
+            <div class="label-text">Homophobia</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="faggot">F****t
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="fag">F*g
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="gay">G*y
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='homophobia-form' class='homophobia item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='homophobia-input'
+              placeholder="Enter text"
+              class="custom-content homophobia"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='transphobia'><input class="category" type="checkbox" value="Transphobia">
+            <div class="delete-category"></div>
+            <div class="label-text">Transphobia</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="tranny">Tra**y
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="she-male">She-male
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="transgender">Trans***der
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='transphobia-form' class='transphobia item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='transphobia-input'
+              placeholder="Enter text"
+              class="custom-content transphobia"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+      <div class="content-category collapsed">
+        <form id="custom-category-form">
+          <label class="outer-label">Custom category: <input type="text" placeholder="Enter text" class="custom-category" value=""></label>
+          <input type="submit" class="hidden-submit"/>
+        </form>
+      </div>
+
+      <div id="status"></div>
+      <button id="save-button" class="extension-button">Save Changes</button>
+    </div>
+  </body>
+</html>
