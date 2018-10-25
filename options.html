@@ -13,12 +13,7 @@
       <div class="options-header">
         <div class="options-image"></div>
       </div>
-      <p class="intro">
-        Customize content you would like to block by selecting/deselecting the
-        categories below, or make your own custom category, press enter to submit.
-      </p>
-
-      <h2>Content to Block:</h2>
+      <h2>Block the content and image associated with following keywords</h2>
 
       <div id="options-content">
         <div class="content-category collapsed">
@@ -56,7 +51,11 @@
             <div class="label-text">Gun Violence</div>
             <div class="dropdown-icon down"></div>
             <label class="content-item-label">
-              <input class="content-item" type="checkbox" value="gun violence">Gun violence
+              <input class="content-item" type="checkbox" value="gun">Gun
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="gun control">Gun Control
               <div class="delete-content-item"></div>
             </label>
             <label class="content-item-label">
@@ -88,15 +87,15 @@
             <div class="label-text">Donald Trump</div>
             <div class="dropdown-icon down"></div>
             <label class="content-item-label">
-              <input class="content-item" type="checkbox" value="Trump">Donald Trump
+              <input class="content-item" type="checkbox" value="Trump">Trump
               <div class="delete-content-item"></div>
             </label>
             <label class="content-item-label">
-              <input class="content-item" type="checkbox" value="The Donald">The Donald
+              <input class="content-item" type="checkbox" value="Donald Trump">Donald Trump
               <div class="delete-content-item"></div>
             </label>
             <label class="content-item-label">
-              <input class="content-item" type="checkbox" value="Melania">Melania
+              <input class="content-item" type="checkbox" value="President">President
               <div class="delete-content-item"></div>
             </label>
           </label>
@@ -128,7 +127,7 @@
               <div class="delete-content-item"></div>
             </label>
             <label class="content-item-label">
-              <input class="content-item" type="checkbox" value="raghead">Rag***d
+              <input class="content-item" type="checkbox" value="white trash">Wh**e T***h
               <div class="delete-content-item"></div>
             </label>
           </label>
@@ -225,6 +224,72 @@
             <input type="submit" class="hidden-submit"/>
           </form>
         </div>
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='death'><input class="category" type="checkbox" value="Death">
+            <div class="delete-category"></div>
+            <div class="label-text">Death</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="kill">Kill
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="murder">Murder
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="homicide">Homicide
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="dead">Dead
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='death-form' class='death item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='death-input'
+              placeholder="Enter text"
+              class="custom-content death"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
+
+        <div class="content-category collapsed">
+          <label class="outer-label" id='disaster'><input class="category" type="checkbox" value="Disaster">
+            <div class="delete-category"></div>
+            <div class="label-text">Disaster</div>
+            <div class="dropdown-icon down"></div>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="accident">Accident
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="earthquack">Earthquack
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="sunami">Sunami
+              <div class="delete-content-item"></div>
+            </label>
+            <label class="content-item-label">
+              <input class="content-item" type="checkbox" value="disease">Disease
+              <div class="delete-content-item"></div>
+            </label>
+          </label>
+          <form id='disaster-form' class='disaster item-form'>
+            <label class="outer-label">Custom filter:
+              <input type="text" id='disaster-input'
+              placeholder="Enter text"
+              class="custom-content disaster"
+              value=""></label>
+            <input type="submit" class="hidden-submit"/>
+          </form>
+        </div>
+
 
       <div class="content-category collapsed">
         <form id="custom-category-form">

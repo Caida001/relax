@@ -151,6 +151,8 @@ input[type="text"] {
   background: #c0c5c7;
   color: rgba(35,40,40,1);
   border-radius: 5px;
+  border: 5px;
+  border-style: outset;
 }
 
 
@@ -241,10 +243,6 @@ input[type="text"] {
   cursor: pointer;
   height: 18px;
   width: 18px;
-}
-
-.intro {
-  font-size: 16px;
 }
 
 .content-blocker-title {
